@@ -1,4 +1,4 @@
-import BottomNav from '@/components/BottomNav';
+import BottomNav from '@/components/bottomnav';
 import SearchBar from '@/components/searchbar';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
