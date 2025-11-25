@@ -1,11 +1,14 @@
 import BottomNav from '@/components/BottomNav';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { Entypo } from '@expo/vector-icons';
 import { StyleSheet } from 'react-native';
+
 
 export default function Principal() {
   return (
      <><ThemedView>
+        <Entypo name="dots-three-vertical" size={24} color="black" />
         <ThemedText type="title">Principal</ThemedText>
       </ThemedView>
       <BottomNav /> 
