@@ -8,7 +8,7 @@ export default function Principal() {
      <><ThemedView>
         <ThemedText type="title">Principal</ThemedText>
       </ThemedView>
-      <BottomNav /> //Botones de navegacion de home amigos mesanjes y perfil
+      <BottomNav /> 
     </>
   );
 }
