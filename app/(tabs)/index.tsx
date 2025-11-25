@@ -4,7 +4,7 @@ import { Button, StyleSheet, View } from 'react-native';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
+import { Link, router } from 'expo-router';
 
 export default function HomeScreen() {
   return (
@@ -28,7 +28,7 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <View style={styles.redondo}>
                 <Button title="Iniciar Session"
-                  onPress={() => alert('Iniciar Session')}/>          
+                  onPress={() => router.push("/Iniciar_session")}/>
                 </View>
         <Link href="/registrarse">
           <Link.Trigger>
