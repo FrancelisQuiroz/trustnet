@@ -1,5 +1,6 @@
 import BottomNav from '@/components/BottomNav';
 import SearchBar from '@/components/searchbar';
+import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Entypo } from '@expo/vector-icons';
 import { Image, ScrollView, StyleSheet } from 'react-native';
@@ -17,6 +18,9 @@ export default function Principal() {
                   resizeMode="cover"
                 />
       </ThemedView>
+      <ThemedText type="default">Sjmane. Pantalones modelo Efecto Lipo en el centro
+de barquisimeto. Pues te garantizo que cuenta con la mejor calidad y precio del mercado. tan solo 30$
+Leer más.....</ThemedText>
       </ScrollView>
       <BottomNav /> 
     </>
