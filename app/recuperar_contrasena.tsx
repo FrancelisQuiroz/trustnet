@@ -1,5 +1,4 @@
 import { Image } from 'expo-image';
-import { Link } from 'expo-router';
 import React from 'react';
 import { Button, StyleSheet, TextInput, View, useColorScheme } from 'react-native';
 
@@ -31,58 +30,22 @@ export default function Registrarse() {
             <ThemedText type="title">TrustNet</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-          <ThemedText type="subtitle">Registro</ThemedText>
-          <TextInput
-          style={styles.input}
-          onChangeText={onChangeText}
-          value={text}
-          placeholder="Nombre de Usuario"
-        />
+          <ThemedText type="subtitle">Recuperar Contraseña</ThemedText>
+          <ThemedText type="default">Ingresa tu correo elctronico para recuperar tu contraseña </ThemedText>
           <TextInput
           style={styles.input}
           onChangeText={onChangeText}
           value={text}
           placeholder="Correo electronico"
         />
-        <TextInput
-          style={styles.input}
-          onChangeText={onChangeText}
-          value={text2}
-          placeholder="Contraseña"
-        />
-        <TextInput
-          style={styles.input}
-          onChangeText={onChangeText}
-          value={text2}
-          placeholder="Confirmar Contraseña"
-        />
-        <TextInput
-          style={styles.input}
-          onChangeText={onChangeText}
-          value={text2}
-          placeholder="Telefono"
-        />
-        <TextInput
-          style={styles.input}
-          onChangeText={onChangeText}
-          value={text2}
-          placeholder="Ubicacion"
-        />
       </ThemedView>
       <ThemedView style={styles.redondo}>
         <View style={styles.redondo}>
-        <Button title="Iniciar Session"
-          onPress={() => alert('Iniciar Session')}/>          
+        <Button title="Recuperar"
+          onPress={() => alert('Recuperar')}/>          
         </View>
+        <ThemedText type="subtitle">Enviaremos un mesaje a tu correo</ThemedText>
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-           <Link href="/modal">
-                <Link.Trigger>
-                  <ThemedText type="subtitle">¿Olvidastes tu contraseña?.</ThemedText>
-                </Link.Trigger>
-                <Link.Preview />
-              </Link>
-        </ThemedView>
     </ParallaxScrollView>
   );
 }
