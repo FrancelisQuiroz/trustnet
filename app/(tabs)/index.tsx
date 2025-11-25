@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { StyleSheet } from 'react-native';
+import { Button, StyleSheet, View } from 'react-native';
 
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
@@ -26,9 +26,13 @@ export default function HomeScreen() {
             <ThemedText type="title">TrustNet</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <Link href="/Iniciar_session">
+        <View style={styles.redondo}>
+                <Button title="Iniciar Session"
+                  onPress={() => alert('Iniciar Session')}/>          
+                </View>
+        <Link href="/registrarse">
           <Link.Trigger>
-            <ThemedText style={styles.stepContainer} type="subtitle">Iniciar Session</ThemedText>
+            <ThemedText style={styles.stepContainer} type="subtitle">¿No tienes una cuenta?. Registrate aquí</ThemedText>
           </Link.Trigger>
           <Link.Preview />
           <Link.Menu>
