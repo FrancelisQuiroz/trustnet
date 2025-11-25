@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Link } from 'expo-router';
+import { Link, router } from 'expo-router';
 import React from 'react';
 import { Button, StyleSheet, TextInput, View, useColorScheme } from 'react-native';
 
@@ -11,7 +11,7 @@ const colorScheme = useColorScheme(); // 'light' or 'dark'
 const [text, onChangeText] = React.useState('Correo electronico');
 const [text2, onChangeNumber] = React.useState('Contraseña');
 
-export default function HomeScreen() {
+export default function IniciarSession() {
   return (
     <ParallaxScrollView 
       headerBackgroundColor={{ light: '#ffffffff', dark: '#1D3D47' }}
@@ -48,7 +48,7 @@ export default function HomeScreen() {
       <ThemedView style={styles.redondo}>
         <View style={styles.redondo}>
         <Button title="Iniciar Session"
-          onPress={() => alert('Iniciar Session')}/>          
+          onPress={() => router.push("/principal")}/>          
         </View>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
